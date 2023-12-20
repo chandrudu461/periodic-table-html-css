@@ -13,20 +13,80 @@
     visibility: hidden;
 }
 
+.legend {
+    height: 250px;
+    width: 700px;
+    border-style: ridge;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.leg {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.leg p {
+    font-size: 18px;
+    width: 150px;
+}
+
 h1 {
     padding: 20px;
-    font-size: 30px;
-    border: 1px dashed black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
     text-align: center;
-    margin-left: 40%;
-    margin-right: 40%;
     color: red;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+.square {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: none;
+    margin: 2px;
+}
+
+#x-1 {
+    background-color: #ea3333b8;
+}
+
+#x-2 {
+    background-color: gold;
+}
+#x-3 {
+    background-color: lightblue;
+}
+#x-4 {
+    background-color: #448EE4;
+}
+#x-5 {
+    background-color: #2feee8;
+}
+#x-6 {
+    background-color: rgb(147, 25, 147);
+}
+#x-7 {
+    background-color: gold;
+}
+#x-8 {
+    background-color: lightgreen;
+}
+#x-9 {
+    background-color: pink;
+}
+#x-10 {
+    background-color: #B2BEB5;
+}
+
 h1:hover {
-    background-color: #99FF99;
+    /* background-color: #99FF99; */
 }
 
 .container {
@@ -71,6 +131,11 @@ h1:hover {
 #box-12:hover .child {
     visibility: hidden;
 } */
+
+.box:hover .child::before {
+    position: relative;
+    left: 10%;
+}
 
 #box-1:hover .child::before {
     visibility: visible;
@@ -166,158 +231,348 @@ h1:hover {
     visibility: visible;
     content: "39.0983";
 }
+
 #box-20:hover .child::before {
     visibility: visible;
     content: "40.078";
 }
+
 #box-21:hover .child::before {
     visibility: visible;
     content: "44.9559";
 }
+
 #box-22:hover .child::before {
     visibility: visible;
     content: "47.867";
 }
+
 #box-23:hover .child::before {
     visibility: visible;
     content: "50.9415";
 }
+
 #box-24:hover .child::before {
     visibility: visible;
     content: "51.9961";
 }
+
 #box-25:hover .child::before {
     visibility: visible;
     content: "54.938";
 }
+
 #box-26:hover .child::before {
     visibility: visible;
     content: "55.845";
 }
+
 #box-27:hover .child::before {
     visibility: visible;
     content: "58.933";
 }
+
 #box-28:hover .child::before {
     visibility: visible;
     content: "58.693";
 }
+
 #box-29:hover .child::before {
     visibility: visible;
     content: "63.546";
 }
+
 #box-30:hover .child::before {
     visibility: visible;
     content: "65.39";
 }
+
 #box-31:hover .child::before {
     visibility: visible;
     content: "69.723";
 }
+
 #box-32:hover .child::before {
     visibility: visible;
     content: "72.64";
 }
+
 #box-33:hover .child::before {
     visibility: visible;
     content: "74.921";
 }
+
 #box-34:hover .child::before {
     visibility: visible;
     content: "78.96";
 }
+
 #box-35:hover .child::before {
     visibility: visible;
     content: "79.904";
 }
+
 #box-36:hover .child::before {
     visibility: visible;
     content: "83.798";
 }
+
 #box-37:hover .child::before {
     visibility: visible;
     content: "85.4678";
 }
+
 #box-38:hover .child::before {
     visibility: visible;
     content: "87.62";
 }
+
 #box-39:hover .child::before {
     visibility: visible;
     content: "88.906";
 }
+
 #box-40:hover .child::before {
     visibility: visible;
     content: "91.224";
 }
+
 #box-41:hover .child::before {
     visibility: visible;
     content: "92.906";
 }
+
 #box-42:hover .child::before {
     visibility: visible;
     content: "95.94";
 }
+
 #box-43:hover .child::before {
     visibility: visible;
-    content: "98";
+    content: "98.001";
 }
+
 #box-44:hover .child::before {
     visibility: visible;
     content: "101.07";
 }
+
 #box-45:hover .child::before {
     visibility: visible;
     content: "102.91";
 }
+
 #box-46:hover .child::before {
     visibility: visible;
     content: "106.42";
 }
+
 #box-47:hover .child::before {
     visibility: visible;
     content: "107.87";
 }
+
 #box-48:hover .child::before {
     visibility: visible;
     content: "112.411";
 }
+
 #box-49:hover .child::before {
     visibility: visible;
     content: "114.82";
 }
+
 #box-50:hover .child::before {
     visibility: visible;
     content: "118.71";
 }
+
 #box-51:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "121.76";
 }
+
 #box-52:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "127.6";
 }
+
 #box-53:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "126.904";
 }
+
 #box-54:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "131.293";
 }
+
 #box-55:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "132.91";
 }
+
 #box-56:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "137.327";
 }
-#box-57:hover .child::before {
+
+#box-58:hover .child::before {
     visibility: visible;
-    content: "";
+    content: "178.49";
 }
+
+#box-59:hover .child::before {
+    visibility: visible;
+    content: "180.9479";
+}
+
+#box-60:hover .child::before {
+    visibility: visible;
+    content: "183.84";
+}
+
+#box-61:hover .child::before {
+    visibility: visible;
+    content: "186.207";
+}
+
+#box-62:hover .child::before {
+    visibility: visible;
+    content: "190.23";
+}
+
+#box-63:hover .child::before {
+    visibility: visible;
+    content: "192.22";
+}
+
+#box-64:hover .child::before {
+    visibility: visible;
+    content: "195.08";
+}
+
+#box-65:hover .child::before {
+    visibility: visible;
+    content: "196.97";
+}
+
+#box-66:hover .child::before {
+    visibility: visible;
+    content: "200.59";
+}
+
+#box-67:hover .child::before {
+    visibility: visible;
+    content: "204.3833";
+}
+
+#box-68:hover .child::before {
+    visibility: visible;
+    content: "207.2";
+}
+
+#box-69:hover .child::before {
+    visibility: visible;
+    content: "208.9804";
+}
+
+#box-70:hover .child::before {
+    visibility: visible;
+    content: "209";
+}
+
+#box-71:hover .child::before {
+    visibility: visible;
+    content: "210";
+}
+
+#box-72:hover .child::before {
+    visibility: visible;
+    content: "222";
+
+}
+
+#box-73:hover .child::before {
+    visibility: visible;
+    content: "223";
+}
+
+#box-74:hover .child::before {
+    visibility: visible;
+    content: "226";
+}
+
+#box-76:hover .child::before {
+    visibility: visible;
+    content: "267";
+}
+
+#box-77:hover .child::before {
+    visibility: visible;
+    content: "268";
+}
+
+#box-78:hover .child::before {
+    visibility: visible;
+    content: "269";
+}
+
+#box-79:hover .child::before {
+    visibility: visible;
+    content: "270";
+}
+
+#box-80:hover .child::before {
+    visibility: visible;
+    content: "269";
+}
+
+#box-81:hover .child::before {
+    visibility: visible;
+    content: "277";
+}
+
+#box-82:hover .child::before {
+    visibility: visible;
+    content: "281";
+}
+
+#box-83:hover .child::before {
+    visibility: visible;
+    content: "282";
+}
+
+#box-84:hover .child::before {
+    visibility: visible;
+    content: "285";
+}
+
+#box-85:hover .child::before {
+    visibility: visible;
+    content: "286";
+}
+
+#box-86:hover .child::before {
+    visibility: visible;
+    content: "290";
+}
+
+#box-87:hover .child::before {
+    visibility: visible;
+    content: "290";
+}
+
+#box-88:hover .child::before {
+    visibility: visible;
+    content: "293";
+}
+
+#box-89:hover .child::before {
+    visibility: visible;
+    content: "294";
+}
+
 
 
 .box:hover {
@@ -349,8 +604,9 @@ h1:hover {
 
 #gap-3 {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
     line-height: 60px;
-    font-size: large;
+    font-size: 30px;
     grid-area: 8 / 1 / 9 / 19;
 }
 
@@ -376,129 +632,6 @@ h1:hover {
 #box-53 {
     background-color: lightgreen;
 }
-
-#box-1:hover,
-#box-2:hover,
-#box-3:hover,
-#box-4:hover,
-#box-5:hover,
-#box-6:hover,
-#box-7:hover,
-#box-8:hover,
-#box-9:hover,
-#box-10:hover,
-#box-11:hover,
-#box-12:hover,
-#box-13:hover,
-#box-14:hover,
-#box-15:hover,
-#box-16:hover,
-#box-17:hover,
-#box-18:hover,
-#box-19:hover,
-#box-20:hover,
-#box-21:hover,
-#box-22:hover,
-#box-23:hover,
-#box-24:hover,
-#box-25:hover,
-#box-26:hover,
-#box-27:hover,
-#box-28:hover,
-#box-29:hover,
-#box-30:hover,
-#box-31:hover,
-#box-32:hover,
-#box-33:hover,
-#box-34:hover,
-#box-35:hover,
-#box-36:hover,
-#box-37:hover,
-#box-38:hover,
-#box-39:hover,
-#box-40:hover,
-#box-41:hover,
-#box-42:hover,
-#box-43:hover,
-#box-44:hover,
-#box-45:hover,
-#box-46:hover,
-#box-47:hover,
-#box-48:hover,
-#box-49:hover,
-#box-50:hover,
-#box-51:hover,
-#box-52:hover,
-#box-53:hover,
-#box-54:hover,
-#box-55:hover,
-#box-56:hover,
-#box-57:hover,
-#box-58:hover,
-#box-59:hover,
-#box-60:hover,
-#box-61:hover,
-#box-62:hover,
-#box-63:hover,
-#box-64:hover,
-#box-65:hover,
-#box-66:hover,
-#box-67:hover,
-#box-68:hover,
-#box-69:hover,
-#box-70:hover,
-#box-71:hover,
-#box-72:hover,
-#box-73:hover,
-#box-74:hover,
-#box-75:hover,
-#box-76:hover,
-#box-76:hover,
-#box-77:hover,
-#box-78:hover,
-#box-79:hover,
-#box-80:hover,
-#box-81:hover,
-#box-82:hover,
-#box-83:hover,
-#box-84:hover,
-#box-85:hover,
-#box-86:hover,
-#box-87:hover,
-#box-88:hover,
-#box-89:hover,
-#box-90:hover,
-#box-91:hover,
-#box-92:hover,
-#box-93:hover,
-#box-94:hover,
-#box-95:hover,
-#box-96:hover,
-#box-97:hover,
-#box-98:hover,
-#box-99:hover,
-#box-100:hover,
-#box-101:hover,
-#box-102:hover,
-#box-103:hover,
-#box-104:hover,
-#box-105:hover,
-#box-106:hover,
-#box-107:hover,
-#box-108:hover,
-#box-109:hover,
-#box-110:hover,
-#box-111:hover,
-#box-112:hover,
-#box-113:hover,
-#box-114:hover {
-    .child {
-        visibility: hidden;
-    }
-
-    background-color: #F0E68C;
-}
-
 
 #box-2,
 #box-10,
@@ -629,7 +762,131 @@ h1:hover {
     background-color: #2feee8;
 }
 
-@media (max-width:400px) {
+#box-1:hover,
+#box-2:hover,
+#box-3:hover,
+#box-4:hover,
+#box-5:hover,
+#box-6:hover,
+#box-7:hover,
+#box-8:hover,
+#box-9:hover,
+#box-10:hover,
+#box-11:hover,
+#box-12:hover,
+#box-13:hover,
+#box-14:hover,
+#box-15:hover,
+#box-16:hover,
+#box-17:hover,
+#box-18:hover,
+#box-19:hover,
+#box-20:hover,
+#box-21:hover,
+#box-22:hover,
+#box-23:hover,
+#box-24:hover,
+#box-25:hover,
+#box-26:hover,
+#box-27:hover,
+#box-28:hover,
+#box-29:hover,
+#box-30:hover,
+#box-31:hover,
+#box-32:hover,
+#box-33:hover,
+#box-34:hover,
+#box-35:hover,
+#box-36:hover,
+#box-37:hover,
+#box-38:hover,
+#box-39:hover,
+#box-40:hover,
+#box-41:hover,
+#box-42:hover,
+#box-43:hover,
+#box-44:hover,
+#box-45:hover,
+#box-46:hover,
+#box-47:hover,
+#box-48:hover,
+#box-49:hover,
+#box-50:hover,
+#box-51:hover,
+#box-52:hover,
+#box-53:hover,
+#box-54:hover,
+#box-55:hover,
+#box-56:hover,
+#box-57:hover,
+#box-58:hover,
+#box-59:hover,
+#box-60:hover,
+#box-61:hover,
+#box-62:hover,
+#box-63:hover,
+#box-64:hover,
+#box-65:hover,
+#box-66:hover,
+#box-67:hover,
+#box-68:hover,
+#box-69:hover,
+#box-70:hover,
+#box-71:hover,
+#box-72:hover,
+#box-73:hover,
+#box-74:hover,
+#box-75:hover,
+#box-76:hover,
+#box-76:hover,
+#box-77:hover,
+#box-78:hover,
+#box-79:hover,
+#box-80:hover,
+#box-81:hover,
+#box-82:hover,
+#box-83:hover,
+#box-84:hover,
+#box-85:hover,
+#box-86:hover,
+#box-87:hover,
+#box-88:hover,
+#box-89:hover,
+#box-90:hover,
+#box-91:hover,
+#box-92:hover,
+#box-93:hover,
+#box-94:hover,
+#box-95:hover,
+#box-96:hover,
+#box-97:hover,
+#box-98:hover,
+#box-99:hover,
+#box-100:hover,
+#box-101:hover,
+#box-102:hover,
+#box-103:hover,
+#box-104:hover,
+#box-105:hover,
+#box-106:hover,
+#box-107:hover,
+#box-108:hover,
+#box-109:hover,
+#box-110:hover,
+#box-111:hover,
+#box-112:hover,
+#box-113:hover,
+#box-114:hover {
+    .child {
+        visibility: hidden;
+    }
+
+    background-color: #F0E68C;
+}
+
+
+
+@media (max-width:1000px) {
     .container {
         display: flex;
         align-items: center;

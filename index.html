@@ -4,16 +4,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Periodic Table </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lobster+Two&family=Roboto+Slab&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>PERIODIC TABLE</h1>
+        <div class="legend">
+            <!-- <h2>LEGEND</h2> -->
+            <div class="leg">
+                <div class="square" id="x-1"></div>
+                <p>Alkali metals</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-2"></div>
+                <p>Alkaline earth metals</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-3"></div>
+                <p>Transition metals</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-4"></div>
+                <p>Lanthanids</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-5"></div>
+                <p>Actinids</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-6"></div>
+                <p>Post-transition metals</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-7"></div>
+                <p>Metalloids</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-8"></div>            
+                <p>Reactive non-metals</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-9"></div>            
+                <p>Noble gases</p>
+            </div>
+            <div class="leg">
+                <div class="square" id="x-10"></div>            
+                <p>Unknown chemical properties</p>
+            </div>
+        </div>
+        
+
         <div class="container">
-            <div class="gap" id="gap-1">gap1</div>
-            <div class="gap" id="gap-2">gap2</div>
+            <div class="gap" id="gap-1"></div>
+            <div class="gap" id="gap-2"></div>
             <div class="gap" id="gap-3">Lanthanoids and Actinoids</div>
-            <div class="gap" id="gap-4">gap3</div>
-            <div class="gap" id="gap-5">gap4</div>
+            <div class="gap" id="gap-4"></div>
+            <div class="gap" id="gap-5"></div>
             <div class="box" id="box-1" data-atomic-weight="1.008">
                 <h3>Hydrogen</h3>
                 <p>H</p>
@@ -67,12 +117,12 @@
             <div class="box" id="box-11">
                 <h3>Sodium</h3>
                 <p>Na</p>
-                <p>11</p>
+                <p class="child">11</p>
             </div>
             <div class="box" id="box-12">
                 <h3>Magnesium</h3>
                 <p>Mg</p>
-                <p>12</p>
+                <p class="child">12</p>
             </div>
             <div class="box" id="box-13">
                 <h3>Aluminium</h3>
@@ -295,7 +345,7 @@
                 <p class="child">56</p>
             </div>
             <div class="box" id="box-57">
-                <h3>Lanthanoids</h3>
+                <h3>Lanthanids</h3>
                 <p>Lantha</p>
                 <p>Nids</p>
             </div>
@@ -387,7 +437,7 @@
             <div class="box" id="box-75">
                 <h3>Actinids</h3>
                 <p>Acti</p>
-                <p class="child">Nids</p>
+                <p>Nids</p>
             </div>
             <div class="box" id="box-76">
                 <h3>Rutherfordium</h3>
