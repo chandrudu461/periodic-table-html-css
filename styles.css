@@ -60,27 +60,35 @@ h1 {
 #x-2 {
     background-color: gold;
 }
+
 #x-3 {
     background-color: lightblue;
 }
+
 #x-4 {
     background-color: #448EE4;
 }
+
 #x-5 {
     background-color: #2feee8;
 }
+
 #x-6 {
     background-color: rgb(147, 25, 147);
 }
+
 #x-7 {
     background-color: gold;
 }
+
 #x-8 {
     background-color: lightgreen;
 }
+
 #x-9 {
     background-color: pink;
 }
+
 #x-10 {
     background-color: #B2BEB5;
 }
@@ -573,6 +581,154 @@ h1:hover {
     content: "294";
 }
 
+#box-90:hover .child::before {
+    visibility: visible;
+    content: "294";
+}
+
+#box-91:hover .child::before {
+    visibility: visible;
+    content: "138.91";
+}
+
+#box-92:hover .child::before {
+    visibility: visible;
+    content: "140.12";
+}
+
+#box-93:hover .child::before {
+    visibility: visible;
+    content: "140.9077";
+}
+
+#box-94:hover .child::before {
+    visibility: visible;
+    content: "144.24";
+}
+
+#box-95:hover .child::before {
+    visibility: visible;
+    content: "145";
+}
+
+#box-96:hover .child::before {
+    visibility: visible;
+    content: "150.36";
+}
+
+#box-97:hover .child::before {
+    visibility: visible;
+    content: "151.964";
+}
+
+#box-98:hover .child::before {
+    visibility: visible;
+    content: "157.25";
+}
+
+#box-99:hover .child::before {
+    visibility: visible;
+    content: "158.9253";
+}
+
+#box-100:hover .child::before {
+    visibility: visible;
+    content: "162.5";
+}
+
+#box-101:hover .child::before {
+    visibility: visible;
+    content: "164.9303";
+}
+
+#box-102:hover .child::before {
+    visibility: visible;
+    content: "167.259";
+}
+
+#box-103:hover .child::before {
+    visibility: visible;
+    content: "168.9342";
+}
+
+#box-104:hover .child::before {
+    visibility: visible;
+    content: "173.04";
+}
+
+#box-105:hover .child::before {
+    visibility: visible;
+    content: "174.967";
+}
+
+#box-106:hover .child::before {
+    visibility: visible;
+    content: "227";
+}
+
+#box-107:hover .child::before {
+    visibility: visible;
+    content: "232.038";
+}
+
+#box-108:hover .child::before {
+    visibility: visible;
+    content: "231.035";
+}
+
+#box-109:hover .child::before {
+    visibility: visible;
+    content: "238.028";
+}
+
+#box-110:hover .child::before {
+    visibility: visible;
+    content: "237";
+}
+#box-111:hover .child::before {
+    visibility: visible;
+    content: "244";
+}
+#box-112:hover .child::before {
+    visibility: visible;
+    content: "243";
+}
+#box-113:hover .child::before {
+    visibility: visible;
+    content: "247";
+}
+#box-114:hover .child::before {
+    visibility: visible;
+    content: "247";
+}
+#box-115:hover .child::before {
+    visibility: visible;
+    content: "251";
+}
+#box-116:hover .child::before {
+    visibility: visible;
+    content: "252";
+}
+
+#box-117:hover .child::before {
+    visibility: visible;
+    content: "257";
+}
+#box-118:hover .child::before {
+    visibility: visible;
+    content: "258";
+}
+#box-119:hover .child::before {
+    visibility: visible;
+    content: "259";
+}
+#box-120:hover .child::before {
+    visibility: visible;
+    content: "262";
+}
+
+
+
 
 
 .box:hover {
@@ -758,7 +914,12 @@ h1:hover {
 #box-112,
 #box-113,
 #box-114,
-#box-115 {
+#box-115,
+#box-116,
+#box-117,
+#box-118,
+#box-119,
+#box-120 {
     background-color: #2feee8;
 }
 
@@ -876,7 +1037,13 @@ h1:hover {
 #box-111:hover,
 #box-112:hover,
 #box-113:hover,
-#box-114:hover {
+#box-114:hover,
+#box-115:hover,
+#box-116:hover,
+#box-117:hover,
+#box-118:hover,
+#box-119:hover,
+#box-120:hover {
     .child {
         visibility: hidden;
     }
@@ -886,7 +1053,7 @@ h1:hover {
 
 
 
-@media (max-width:1000px) {
+@media (max-width:400px) {
     .container {
         display: flex;
         align-items: center;
