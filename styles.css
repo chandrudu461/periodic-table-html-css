@@ -5,18 +5,18 @@
     /* font-size: 10px; */
 }
 
-.box p { 
+.box p {
     font-size: 1.5rem;
 }
 
 .box h3 {
     font-size: 0.75rem;
-    visibility: hidden; 
+    /* visibility: hidden;  */
     /* display: None; */
 }
 
 .box .child {
-    font-size: 2.5rem;
+    font-size: 0.25rem;
 }
 
 .container {
@@ -36,7 +36,7 @@
     display: none;
 }
 
-.atomic_symbol{
+.atomic_symbol {
     display: block;
 }
 
@@ -67,7 +67,7 @@
     } */
 
     .child {
-        font-size: 18px;
+        font-size: 1rem;
     }
 }
 
@@ -193,6 +193,10 @@ h1:hover {
 
 .box .child {
     text-align: center;
+}
+
+.box:hover .child {
+    font-size: 0.75rem;
 }
 
 #box-1:hover .child::before {
@@ -788,14 +792,14 @@ h1:hover {
 
 .box:hover {
     h3 {
-        visibility: visible;
+        /* visibility: visible; */
         /* display: inline; */
         font-size: 12px;
     }
 
     p {
-         font-size: 12px;
-        visibility: visible; 
+        font-size: 12px;
+        visibility: visible;
     }
 
     /* background-color: #F0E68C; */
@@ -1076,9 +1080,32 @@ h1:hover {
         visibility: hidden;
         /* display: none; */
     }
+
     background-color: #F0E68C;
 }
 
-@media (max-width:500px){
-    
+@media (max-width:500px) {
+    .atmic_symbol {
+        display: inline;
+        font-size: 1rem;
+    }
+
+    .atomic_name {
+        display: none;
+    }
+}
+
+@media (min-width:600px) {
+    .atomic_symbol {
+        display: none;
+    }
+
+    .atomic_name {
+        font-size: 1rem;
+        display: block;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
 }
